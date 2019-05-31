@@ -111,10 +111,8 @@ function randomChoreDoorGenerator(){
 //Checks to see if the door has the bot behind it and ends the game in failure
 function isBot(num){
     if(doors[num]==='bot'){
-        console.log('bot')
         return true;
     } else {
-        console.log('nobot')
         return false;
     }
 }
@@ -159,9 +157,6 @@ function startRound(){
     startButton.innerHTML='Good luck!';
     currentlyPlaying=true;
     randomChoreDoorGenerator();
-    console.log(imgDoor1)
-    console.log(imgDoor2)
-    console.log(imgDoor3)
 }
 
 startRound();
